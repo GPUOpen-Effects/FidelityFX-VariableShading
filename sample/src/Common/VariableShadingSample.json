@@ -1,0 +1,29 @@
+{
+  "globals": {
+    "CpuValidationLayerEnabled": false,
+    "GpuValidationLayerEnabled": false,
+    "fullScreen": false,
+    "width": 1920,
+    "height": 1080,
+    "activeScene": 0,
+    "benchmark": false,
+    "stablePowerState": false
+  },
+  "scenes": [
+    {
+      "name": "Sponza",
+      "directory": "..\\Media\\Cauldron-Media\\Sponza\\glTF\\",
+      "filename": "sponza.gltf",
+      "TAA": false,
+      "toneMapper": 0,
+      "iblFactor": 0.36,
+      "emisiveFactor": 1,
+      "intensity": 10,
+      "exposure": 1,
+      "camera": {
+        "defaultFrom": [ 5.13694048, 1.89175785, -1.40289795 ],
+        "defaultTo": [ 0.703276634, 1.02280307, 0.218072295 ]
+      }
+    }
+  ]
+}
