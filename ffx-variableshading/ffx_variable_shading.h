@@ -362,7 +362,7 @@ void FFX_VariableShading_GenerateVrsImage(uint3 Gid, uint3 Gtid, uint Gidx)
                 float2 minmax = float2(min(min(lum.x, lum.y), min(lum.z, lum.w)), max(max(lum.x, lum.y), max(lum.z, lum.w)));
                 float3 delta;
                 delta.x = max(abs(lum.x - lum.y), abs(lum.z - lum.w));
-                delta.y = max(abs(lum.x - lum.y), abs(lum.z - lum.w));
+                delta.y = max(abs(lum.x - lum.z), abs(lum.y - lum.w));
                 delta.z = minmax.y - minmax.x;
 
                 // reduce shading rate for fast moving pixels
